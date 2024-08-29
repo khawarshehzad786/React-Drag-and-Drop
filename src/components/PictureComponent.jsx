@@ -13,7 +13,7 @@ function PictureComponent({ id, url }) {
     <img
       ref={drag}
       src={url}
-      width="150px"
+      width="160px"
       alt="img"
       style={{ border: isDragging ? "5px solid red" : "0px" }}
     />
