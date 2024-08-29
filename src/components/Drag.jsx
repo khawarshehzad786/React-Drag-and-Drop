@@ -17,7 +17,7 @@
     // ];
   
 import  { useState } from "react";
-import Picture from "./Picture";
+import Picture from "./PictureComponent";
 import { useDrop } from "react-dnd";
 import "../App.css";
 

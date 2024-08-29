@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import { useDrag } from "react-dnd";
 
-function Picture({ id, url }) {
+function PictureComponent({ id, url }) {
   const [{ isDragging }, drag] = useDrag(() => ({
     type: "image",
     item: { id: id },
@@ -19,4 +19,4 @@ function Picture({ id, url }) {
   );
 }
 
-export default Picture;
+export default PictureComponent;
