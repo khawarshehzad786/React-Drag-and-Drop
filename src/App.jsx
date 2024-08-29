@@ -10,7 +10,7 @@ function App() {
     <>
     <DndProvider backend={HTML5Backend}>
 
-    <div className="App">
+    <div className="text-center w-screen h-screen">
       <h1 className='text-[25px] font-bold m-auto'>React Drag and Drop</h1>
     <Drag/>
       </div>
