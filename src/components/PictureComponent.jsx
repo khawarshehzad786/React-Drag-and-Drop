@@ -15,7 +15,7 @@ function PictureComponent({ id, url }) {
       src={url}
       width="150px"
       alt="img"
-      style={{ border: isDragging ? "5px solid pink" : "0px" }}
+      style={{ border: isDragging ? "5px solid red" : "0px" }}
     />
   );
 }
