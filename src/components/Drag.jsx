@@ -36,7 +36,7 @@ const PictureList = [
       },
 ];
 
-function DragDrop() {
+function Drag() {
   const [board, setBoard] = useState([]);
 
   const [{ isOver }, drop] = useDrop(() => ({
@@ -67,4 +67,4 @@ function DragDrop() {
   );
 }
 
-export default DragDrop;
+export default Drag;
