@@ -39,14 +39,15 @@ function Drag() {
   };
   return (
     <>
-      <div className="Pictures flex" >
+      <div className="Pictures flex m-auto justify-center border-[5px]" >
         {data.map((picture) => {
           return <Picture url={picture.url} id={picture.id} />;
         })}
       </div>
+      <h2 className="text-left ml-4 my-5">Drag Your Images here</h2>
       <div className="Board flex flex-col justify-center text-center items-center"  ref={drop}>
         {board.map((picture) => {
-          return <Picture className='flex' url={picture.url} id={picture.id} />;
+          return <Picture  className='flex' url={picture.url} id={picture.id} />;
         })}
       </div>
     </>
