@@ -39,7 +39,7 @@ function Drag() {
   };
   return (
     <>
-      <div className="Pictures flex m-auto justify-center border-[5px]">
+      <div className="flex m-auto justify-center border-[5px]">
         {data.map((picture) => {
           return <Picture url={picture.url} id={picture.id} />;
         })}
