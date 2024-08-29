@@ -23,7 +23,7 @@ const data = [
 ];
 
 function Drag() {
-  const [board, setBoard] = useState([]);
+  const [boardimg, setBoardImg] = useState([]);
 
   const [{ isOver }, drop] = useDrop(() => ({
     accept: "image",
@@ -35,7 +35,7 @@ function Drag() {
 
   const addImageToBoard = (id) => {
     const pictureList = data.filter((picture) => id === picture.id);
-    setBoard((board) => [...board, pictureList[0]]);
+    setBoardImg((boardimg) => [...boardimg, pictureList[0]]);
   };
   return (
     <>
@@ -46,7 +46,7 @@ function Drag() {
       </div>
       <h2 className="text-left ml-4 my-5">Drag Your Images here</h2>
       <div className="Board flex flex-col justify-center text-center items-center"  ref={drop}>
-        {board.map((picture) => {
+        {boardimg.map((picture) => {
           return <Picture  className='flex' url={picture.url} id={picture.id} />;
         })}
       </div>
