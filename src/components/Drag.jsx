@@ -7,6 +7,7 @@ import Picture from "./PictureComponent";
 import { useDrop } from "react-dnd";
 import "../App.css";
 
+//images are comming from FakeStore API
 const data = [
   {
         id: 1,
