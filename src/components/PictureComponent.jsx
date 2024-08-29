@@ -14,6 +14,7 @@ function PictureComponent({ id, url }) {
       ref={drag}
       src={url}
       width="150px"
+      alt="img"
       style={{ border: isDragging ? "5px solid pink" : "0px" }}
     />
   );
